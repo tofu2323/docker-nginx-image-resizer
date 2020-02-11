@@ -1,0 +1,8 @@
+version: '1'
+services:
+  nginx-image-resize:
+    env_file: ./.env
+    build: .
+    ports:
+      - '80:80'
+      - '443:443'
